@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background: darken($bg, 8%);
+    transition: all 0.3s ease; 
+  }
+  &:active {
+    background: darken($bg,25%);
+  }
+}
+
+.place-validation,
+.start-date-validation,
+.end-date-validation {
+  color: red;
+}
+
+button{
+  color: #191970;
+  text-decoration:none;
+  padding:5px 10px;
+  border-radius:3px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 80%;
+  @include button-bg(white);
+}

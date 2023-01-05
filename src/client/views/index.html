@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Planner</title>
+        <link href="/styles/resets.css">
+        <link href="/styles/base.css">
+        <link href="/styles/header.css">
+        <link href="/styles/form.css">
+        <link href="/styles/footer.css">
+        <script src="https://kit.fontawesome.com/69e8874ccd.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                Travel <i class="fas fa-map-marked"></i> Planner
+            </div>
+        </header>
+
+        <main>
+            <div class="first-page">
+            <section class="first-page-image">
+                <p class="first-page-text">Remember that happiness is a way of travel,<br/> not a destination</p>
+            </section>
+            <section class="form">
+            <form action="" name="details">
+                <div class="input">
+                <label>Destination</label>
+                <input type="text" name="place" placeholder="Where to?" value="" required="required">
+                <p class="place-validation"></p>
+                </div>
+                <div class="input">
+                <label>Start Date</label>
+                <input type="date" name="start-date" required="required" value="">
+                <p class="start-date-validation"></p>
+                </div>
+                <div class="input">
+                <label>End Date</label>
+                <input type="date" name="end-date" required="required" value="">
+                <p class="end-date-validation"></p>
+                </div>
+                <div class="buttons">
+                <button class="submitButton" type="submit">Let's go!</button>
+                <button type="button" data-id="latest-trip">Trips</button>
+                </div>
+            </form>
+            </section>
+            </div>
+            <div class="second-page">
+       
+        </div>
+        </main>
+    </section>
+        <footer>
+            <p>&copy Ahmed</p>
+                <a href="https://github.com/swealmutairi" target="_blank">
+                    <i class="fab fa-github-alt"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/swealmutairi/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-messenger"></i>
+                </a>
+        </footer>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                })
+            }
+        </script>
+    </body>
+</html>

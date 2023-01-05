@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600&display=swap');
+
+footer {
+  color: goldenrod;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Caveat', cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  a:link {
+  color: goldenrod;
+  }
+  a:hover {
+    color: lightblue;
+  }
+}

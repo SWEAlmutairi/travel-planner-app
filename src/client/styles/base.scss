@@ -1,0 +1,194 @@
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cardo|Montserrat');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.header {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  color: goldenrod;
+  background-color: black;
+  text-align: center;
+  margin: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background: url(../assets/travel1.jpg);
+}
+.first-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 700px;
+  overflow: hidden;
+  background-color: cadetblue;
+  .first-page-image {
+    width: 40%;
+    background: url(../assets/travel1.jpg);
+    //background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+  } 
+    .first-page-text{
+      position: relative;
+      top: 50%;
+      left: 5%;
+      color: goldenrod;
+      font-weight: bold;
+      font-size: 150%;
+      font-family: 'Shadows Into Light', cursive;
+    }
+  }
+  .form {
+    width: 60%;
+    form {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .input {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        width: 50%;
+      }
+      .buttons {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+      }
+      label {
+        font-family: 'Caveat', cursive;
+        font-size: 20px;
+      }
+      input {
+        border: 0;
+        text-transform: uppercase;
+        height:30px; 
+        background-color: lightcyan;
+        border-radius: 30px;
+        padding: 2px;
+        font-family: 'Roboto', cursive;
+        width: 100%;
+        margin: 30px;
+        text-align: center;
+      }
+    }
+  }
+
+
+.second-page {
+
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+  max-height: auto;
+  .result-page-header {
+    display: flex;
+    flex-direction: row-reverse;
+    .header {
+      width: 10%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 80%;
+    }
+  }
+  .trip-duration {
+    font-family: 'Cardo', serif;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    p {
+      margin: 10px;
+      border-top: 1px solid lightgray;
+      border-bottom: 1px solid lightgray;
+      width: 100%;
+      font-size: 40px;
+      i {
+        color: goldenrod;
+        margin-right: 1.5%;
+      }
+    }
+  }
+  .weather {
+    span {
+      font-size: 30px;
+      color: goldenrod;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .current-weather {
+      margin-bottom: 2%;
+    }
+    .forecast {
+      display: grid;
+      grid-gap: 1em;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      width: 70%;
+      margin: 10px;
+    }
+    .day-forecast {
+      width: 70%;
+      img {
+        width: 40px;
+      }
+    }
+  }
+  .photos { 
+    figure {
+      margin-bottom: 3%;
+
+    }
+    
+    img {
+      width:  90%;
+      height: 300px;
+      margin: 1%;
+    }
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+  }
+  figcaption {
+    font-family: 'Shadows Into Light', cursive;
+    a {
+      outline: 0;
+      border: none;
+      text-decoration: none;
+    }
+  }
+  .trip-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
